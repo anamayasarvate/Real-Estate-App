@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{% static 'css/all.css' %}">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- Custom -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- Lightbox -->
+	<link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+	<title>BT Real Estate {% block title %}{% endblock title %}</title>
+</head>
+<body>
+	<!-- Top bar -->
+	{% include 'partials/_topbar.html' %}
+	<!-- Nav bar -->
+	{% include 'partials/_navbar.html' %}
+	<!-- Main content -->
+	{% block content %}
+	{% endblock content %}
+	<!-- Footer bar -->
+	{% include 'partials/_footer.html' %}
+
+	<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+	<script src="{% static 'js/lightbox.min.js' %}"></script>
+</body>
+</html>
